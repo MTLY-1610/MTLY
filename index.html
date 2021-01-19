@@ -3,45 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="y.css">
-    <script src="scroll.js"></script>
-    <title>MTLY</title>
 
 </head>
 <body>
-    <div class="container" data-0="transform:translateX(0%);" data-1000="transform:translateX(-300%);">
-        <section id="section" >
-            <div class="content">
-                <h2>UN</h2>
-              
-                </div>
-        </section>
-        <section id="section">
-            <div class="content">
-                <h2>DEUX</h2>
-             
-                </div>
-        </section>
-        <section id="section">
-            <div class="content">
-                <h2>TROIS</h2>
-               
-                </div>
-        </section>
-        <section id="section">
-            <div class="content">
-                <h2>QUATRE</h2>
-              
-                </div>
-        </section>
-       
+    <!-- <div class="cursor">
+        <div class="cursor__ball cursor__ball--big ">
+          <svg height="30" width="30">
+            <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+          </svg>
+        </div>
         
+        <div class="cursor__ball cursor__ball--small">
+          <svg height="10" width="10">
+            <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+          </svg>
+        </div>
+      </div> -->
+    <div class="main-container">
+        <nav class="main-nav">
+           <div class="left_logo"></div>
+            <ul class="ul_second">
+                <li ><a href="#1" >HOME</a></li>
+                <li ><a  href="#2" >ABOUT ME</a></li>
+                <li ><a  href="#3">GRAPHIC DESIGM</a></li>
+                <li ><a  href="#4">FRONT END</a></li>
+                <li ><a  href="#5">CV</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <section id="1" class="one">
+                <div class="inside">
+                    <h1 class="zero">one</h1>
+                </div>
+            </section>
+            <section id="2" class="one">
+                <div class="inside">
+                    <h1>two</h1>
+                </div>
+            </section>
+            <section id="3" class="one">
+
+                <div class="inside">
+                    <div class="top-container">
+                       <h1 class="main-title">art-direction</h1> 
+                    </div>
+                    <div class="sub-container">
+                        <h1 class="sub-section">art-direction</h1> 
+                     </div>
+                    <div class="containers">
+						<div class="cercle">Technologies</div>
+                        <div class="tech-logo">
+                        <img  src="ressources/InDesign.svg" id="img1" class="imgz">
+                        <img  src="ressources/InDesign.svg" id="img2" class="imgz">
+                        <img  src="ressources/InDesign.svg" id="img3" class="imgz">
+                        <img  src="ressources/InDesign.svg" id="img4" class="imgz">
+                        <img  src="ressources/InDesign.svg" id="img5" class="imgz">
+                     </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <section id="4" class="one">
+                <div class="inside">
+                    <h1>four</h1>
+                </div>
+            </section>
+            <section id="5" class="one">
+                <div class="inside">
+                    <h1>five</h1>
+                </div>
+            </section>
+            
+
+        </div>
+
     </div>
-
-    <script type="text/javascript" src="skrollr.min.js"></script>
-	<script type="text/javascript">
-	    var s = skrollr.init();
-	</script>
-
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>

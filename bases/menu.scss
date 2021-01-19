@@ -1,0 +1,44 @@
+li{
+    list-style: none;
+    transition: all .4s;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.main-nav{
+    
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    height: 15vh;
+    bottom: 0;
+    z-index: 100;
+    width: 100vw;
+}
+
+.left_logo{
+    position: fixed;
+    display: flex;
+    height: 5em;
+    width: 5em;
+    left: 8em;
+    background-image: url("mtly_ph.svg");
+    bottom: 2em;
+}
+
+.main-nav .ul_second {
+    position: fixed;
+    display: flex;
+    right: 4em;
+    bottom: 4em;
+
+}
+.main-nav .ul_second li{
+    margin-left: 2em;
+        
+    }
+
+li:hover{
+    transform: scale(1.1);
+}

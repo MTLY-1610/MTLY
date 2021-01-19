@@ -1,48 +1,60 @@
-* {
+@import 'bases/menu','bases/anim';
+
+*, ::before, ::after {
     margin: 0;
-    padding: 0;
+    padding:0;
     box-sizing: border-box;
     font-family: sans-serif;
-}
-.container {
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-display: flex;
-scroll-snap-type: x mandatory;
-scroll-padding: 50%;
 
 }
+/* body .cursor {
+    pointer-events: none;
+  }
+  body .cursor__ball {
+    position: fixed;
+    top: 0;
+    left: 0;
+    mix-blend-mode: difference;
+    z-index: 1000;
+  }
+  body .cursor__ball circle {
+    fill: #f7f8fa;
+  } */
 
-.container section {
-    min-width: 100%;
-    height: auto;
+:root {
+    --res: calc(0.10 * 1vmin);
+}
+body {
+    background-image: repeating-radial-gradient(circle at center center, transparent 0px, transparent 13px,rgba(0,0,0,0.03) 13px, rgba(0,0,0,0.03) 24px,transparent 24px, transparent 62px,rgba(0,0,0,0.03) 62px, rgba(0,0,0,0.03) 96px),repeating-radial-gradient(circle at center center, rgb(255,255,255) 0px, rgb(255,255,255) 14px,rgb(255,255,255) 14px, rgb(255,255,255) 18px,rgb(255,255,255) 18px, rgb(255,255,255) 28px,rgb(255,255,255) 28px, rgb(255,255,255) 32px); background-size: 21px 21px;
+    height:100vh;
+    overflow-x: hidden;
+}
+html, body, .main-container, .container{
+    scroll-behavior: smooth;
+}
+
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+}
+.container{
+   width: 500vw;
+   display: flex;
+   flex-direction: row;
+   
+}
+.container .one {
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 100vh; 
-}
-
-section{
+    justify-content: center;
     scroll-snap-align: center;
+  
 }
-.container section:nth-child(1){
-    background: white;
-}
-
-.container section .content {
-    max-width: 800px;
-}
-
-@media (max-width:900px) {
-    .container {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        transform: none !important;
-    }
-
+::-webkit-scrollbar{
+    display: none;
 }
