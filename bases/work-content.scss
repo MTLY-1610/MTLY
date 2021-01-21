@@ -5,9 +5,8 @@
     flex-direction: column;
     height: 70vh;
     top: 0;
-    @include for-phone-only{
-        height: 90vh;
-    } 
+   
+   
 
     .top-container{
         height:40vh;
@@ -16,6 +15,16 @@
             display: flex;
             width: 100%;
             font-size: 12vw;
+            line-height:.9em;
+            -webkit-text-stroke-width: 3px;
+                -webkit-text-stroke-color: black;
+            @include for-phone-only{
+                font-size: 16vw;
+                line-height:.9em;
+                margin-bottom: .5rem;
+                -webkit-text-stroke-width: 1.7px;
+                -webkit-text-stroke-color: black;
+            } 
         }
     }
 
@@ -29,25 +38,41 @@
             font-weight: 900;
             text-transform: uppercase;
             text-align: start;
+            line-height:.9em;
+            @include for-phone-only{
+                font-size: 5vw;
+                line-height:.9em;
+                font-weight: 900;
+                margin-bottom: .5em;
+            } 
         }
     }
 
     .sub-container-two{
         height:20vh;
         margin-bottom: 1rem;
+        line-height:2em;
+        p{
+            @include for-phone-only{
+                line-height:.9em;}}
 
         a {
-            margin-right: .5em;
+         
             text-transform: uppercase;
             font-weight: 900;
             font-size: 3vw;
+            @include for-phone-only{
+                font-size: 5vw;
+                
+                font-weight: 900;
+            } 
            
         }
 
         #l-1{
             color: rgb(222, 206, 228);   
         }
-        :hover #l-1{
+        :hover a{
             color:rgb(201, 236, 203)
         }
         #l-2{
@@ -62,6 +87,7 @@
         #l-5{
             color:  rgb(240, 223, 220);   
         }
+       
     }
 
     .sub-container-three {
@@ -70,7 +96,7 @@
         align-items: center;
         justify-content: flex-start;
         height:30vh;
-        width: 100vw;
+        width: 100%;
         @include for-phone-only{
             flex-direction: column;
         } 
@@ -89,12 +115,28 @@
             h1{
                 font-size: 2vw;
                 font-weight: 900;
+
+                @include for-phone-only{
+                    font-size: 7vw;
+                }
+                .blinking{
+                    font-weight: 900;
+                    animation:blinkingText 1s infinite;
+                    -webkit-text-stroke-width: 1.7px;
+                }
+                @keyframes blinkingText{
+                    0%{		color: #000;	}
+                    50%{	color: #fff;	}
+                    100%{	color: #000;	}
+                }
             }
+
+            @include for-phone-only{
+                width: 100% ;
+                height: 8vh;
+            } 
         }
-        :hover .cercle{
-            background-color: white;
-            color:black;
-        }
+       
         .tech-logo{
             display: flex;
             flex-direction: row;

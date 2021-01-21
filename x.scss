@@ -44,3 +44,11 @@ html, body, .main-container, .container{
 ::-webkit-scrollbar{
     display: none;
 }
+@include for-phone-only {
+
+    .inside{
+        padding: 2rem;
+        height: 90vh; 
+    }
+   
+}
