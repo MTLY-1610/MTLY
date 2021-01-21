@@ -1,4 +1,4 @@
-@import 'bases/menu','bases/anim';
+@import 'bases/menu','bases/anim','bases/mixins', 'bases/work-content';
 
 *, ::before, ::after {
     margin: 0;
@@ -7,25 +7,12 @@
     font-family: sans-serif;
 
 }
-/* body .cursor {
-    pointer-events: none;
-  }
-  body .cursor__ball {
-    position: fixed;
-    top: 0;
-    left: 0;
-    mix-blend-mode: difference;
-    z-index: 1000;
-  }
-  body .cursor__ball circle {
-    fill: #f7f8fa;
-  } */
 
 :root {
     --res: calc(0.10 * 1vmin);
 }
 body {
-    background-image: repeating-radial-gradient(circle at center center, transparent 0px, transparent 13px,rgba(0,0,0,0.03) 13px, rgba(0,0,0,0.03) 24px,transparent 24px, transparent 62px,rgba(0,0,0,0.03) 62px, rgba(0,0,0,0.03) 96px),repeating-radial-gradient(circle at center center, rgb(255,255,255) 0px, rgb(255,255,255) 14px,rgb(255,255,255) 14px, rgb(255,255,255) 18px,rgb(255,255,255) 18px, rgb(255,255,255) 28px,rgb(255,255,255) 28px, rgb(255,255,255) 32px); background-size: 21px 21px;
+    background-image: repeating-radial-gradient(circle at center center, transparent 0px, transparent 13px,rgba(0,0,0,0.05) 13px, rgba(0,0,0,0.03) 24px,transparent 24px, transparent 62px,rgba(0,0,0,0.03) 62px, rgba(0,0,0,0.03) 96px),repeating-radial-gradient(circle at center center, rgb(255,255,255) 0px, rgb(255,255,255) 14px,rgb(255,255,255) 14px, rgb(255,255,255) 18px,rgb(255,255,255) 18px, rgb(255,255,255) 28px,rgb(255,255,255) 28px, rgb(255,255,255) 32px); background-size: 21px 21px;
     height:100vh;
     overflow-x: hidden;
 }
@@ -50,8 +37,7 @@ html, body, .main-container, .container{
     width: 100vw;
     height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
     scroll-snap-align: center;
   
 }

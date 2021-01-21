@@ -11,7 +11,7 @@ cercle.addEventListener('mouseenter', () => {
     TL.play();
 
 })
-cercle.addEventListener('mouseout', () => {
+cercle.addEventListener('click', () => {
 
     TL.reverse();
 

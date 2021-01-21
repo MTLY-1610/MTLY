@@ -1,0 +1,134 @@
+@import 'mixins';
+
+.inside {
+    @include work-cont-desktop;
+    flex-direction: column;
+    height: 70vh;
+    top: 0;
+    @include for-phone-only{
+        height: 90vh;
+    } 
+
+    .top-container{
+        height:40vh;
+
+        .main-title{
+            display: flex;
+            width: 100%;
+            font-size: 12vw;
+        }
+    }
+
+    .sub-container-one{
+        height:30vh;
+        margin-bottom: 1rem;
+
+        #p-abilities {
+            display: flex;
+            font-size: 3vw;
+            font-weight: 900;
+            text-transform: uppercase;
+            text-align: start;
+        }
+    }
+
+    .sub-container-two{
+        height:20vh;
+        margin-bottom: 1rem;
+
+        a {
+            margin-right: .5em;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 3vw;
+           
+        }
+
+        #l-1{
+            color: rgb(222, 206, 228);   
+        }
+        :hover #l-1{
+            color:rgb(201, 236, 203)
+        }
+        #l-2{
+            color:rgb(201, 236, 203);   
+        }
+        #l-3{
+            color: rgb(224, 205, 150);   
+        }
+        #l-4{
+            color:  rgb(204, 213, 240);   
+        }
+        #l-5{
+            color:  rgb(240, 223, 220);   
+        }
+    }
+
+    .sub-container-three {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        height:30vh;
+        width: 100vw;
+        @include for-phone-only{
+            flex-direction: column;
+        } 
+
+        .cercle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            color:white;
+            width: 30vw ;
+            height: 10vh;
+            text-transform: uppercase;
+            margin:0;
+           
+            h1{
+                font-size: 2vw;
+                font-weight: 900;
+            }
+        }
+        :hover .cercle{
+            background-color: white;
+            color:black;
+        }
+        .tech-logo{
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+            justify-content: space-between;
+            margin-left: 2rem;
+            width:50vw;
+            height: 20vh;
+
+            img {
+                display: flex;
+                transform:  scale(0); 
+            }
+
+            #img1{
+                width: calc(100 * var(--res));
+            }
+            
+            #img2{
+                width: calc(100 * var(--res));
+            }
+            
+            #img3{
+                width: calc(100 * var(--res));
+            }
+            
+            #img4{
+                width: calc(100 * var(--res));
+            }
+            
+            #img5{
+                width: calc(100 * var(--res));
+            }
+        }
+    }
+}
+ 

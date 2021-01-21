@@ -1,54 +1,8 @@
-@media screen and (max-width: 900px){
-    .container {
-        height: 60vh;
-    }
-}
-.top-container{
-    width: 100vw;
-    display: flex;
-    padding: 4em;
-}
-.main-title{
-    display: flex;
-    width: 100%;
-    font-size: 12vw;
-}
-.containers {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height:50vh;
-    width: 100vw;
-}
+@import 'mixins';
 
 
-.cercle {
-    display: flex;
-}
-
-img {
-    transform: translate(0%, -50%) scale(0);
-    top: 65%;
-}
-#img1{
-    width: calc(250 * var(--res));
-}
-
-#img2{
-    width: calc(250 * var(--res));
-}
 
 
-#img3{
-    width: calc(250 * var(--res));
-}
 
-#img4{
-    width: calc(250 * var(--res));
-}
 
-#img5{
-    width: calc(250 * var(--res));
-}
+
