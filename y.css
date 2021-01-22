@@ -235,7 +235,6 @@ li:hover {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  background-color: red;
   color: black;
   width: 50%;
   height: 10vh;
