@@ -3,11 +3,9 @@
 .inside {
     @include work-cont-desktop;
     flex-direction: column;
-    height: 70vh;
+    height: 90vh;
     top: 0;
    
-   
-
     .top-container{
         height:40vh;
 
@@ -92,16 +90,52 @@
 
     .sub-container-three {
         display: flex;
-        flex-direction: row;
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
         justify-content: flex-start;
-        height:30vh;
+        height:100%;
         width: 100%;
         @include for-phone-only{
             flex-direction: column;
         } 
 
-        .cercle {
+        .trigger_1 {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            color:black;
+            width: 50% ;
+            height: 10vh;
+            text-transform: uppercase;
+            margin:0;
+            -webkit-text-stroke-width: 1.7px;
+                -webkit-text-stroke-color: black;
+           
+            h1{
+                font-size: 4vw;
+                font-weight: 900;
+
+                @include for-phone-only{
+                    font-size: 7vw;
+                }
+                .blinking{
+                    font-weight: 900;
+                    animation:blinkingText 1s infinite;
+                    -webkit-text-stroke-width: 1.7px;
+                }
+                @keyframes blinkingText{
+                    0%{		color: #fff;	}
+                    50%{	color: #000;	}
+                    100%{	color: #fff;	}
+                }
+            }
+
+            @include for-phone-only{
+                width: 100% ;
+                height: 8vh;
+            } 
+        }
+        .trigger_2 {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -136,8 +170,41 @@
                 height: 8vh;
             } 
         }
-       
-        .tech-logo{
+        .tech-logo-1{
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+            justify-content: space-between;
+            width:50%;
+
+            img {
+                display: flex;
+                transform:  scale(0); 
+            }
+
+            #img1{
+                width: calc(120 * var(--res));
+                height: auto;
+            }
+            
+            #img2{
+                width: calc(120 * var(--res));
+            }
+            
+            #img3{
+                width: calc(120 * var(--res));
+            }
+            
+            #img4{
+                width: calc(120 * var(--res));
+            }
+            
+            #img5{
+                width: calc(120 * var(--res));
+            }
+        }
+
+        .tech-logo-2{
             display: flex;
             flex-direction: row;
             align-items: stretch;
@@ -151,23 +218,23 @@
                 transform:  scale(0); 
             }
 
-            #img1{
+            #img6{
                 width: calc(100 * var(--res));
             }
             
-            #img2{
+            #img7{
                 width: calc(100 * var(--res));
             }
             
-            #img3{
+            #img8{
                 width: calc(100 * var(--res));
             }
             
-            #img4{
+            #img9{
                 width: calc(100 * var(--res));
             }
             
-            #img5{
+            #img10{
                 width: calc(100 * var(--res));
             }
         }
