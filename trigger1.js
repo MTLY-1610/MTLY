@@ -11,7 +11,7 @@ trigger1.addEventListener('mouseenter', () => {
     TL.play();
 
 })
-trigger1.addEventListener('ontouchstart', () => {
+trigger1.addEventListener('touchstart', () => {
 
     TL.play();
 

@@ -15,7 +15,7 @@
             font-size: 12vw;
             line-height:.9em;
             -webkit-text-stroke-width: 3px;
-                -webkit-text-stroke-color: black;
+            -webkit-text-stroke-color: black;
             @include for-phone-only{
                 font-size: 16vw;
                 line-height:.9em;
@@ -181,27 +181,35 @@
             img {
                 display: flex;
                 transform:  scale(0); 
+
+              @include for-phone-only{
+                // transform:  scale(1); 
+            } 
             }
 
             #img1{
                 width: calc(120 * var(--res));
-                height: auto;
+                height: calc(120 * var(--res));
             }
             
             #img2{
                 width: calc(120 * var(--res));
+                height: calc(120 * var(--res));
             }
             
             #img3{
                 width: calc(120 * var(--res));
+                height: calc(120 * var(--res));
             }
             
             #img4{
                 width: calc(120 * var(--res));
+                height: calc(120 * var(--res));
             }
             
             #img5{
                 width: calc(120 * var(--res));
+                height: calc(120 * var(--res));
             }
         }
 

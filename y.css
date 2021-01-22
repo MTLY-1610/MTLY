@@ -330,19 +330,23 @@ li:hover {
 }
 .inside .sub-container-three .tech-logo-1 #img1 {
   width: calc(120 * var(--res));
-  height: auto;
+  height: calc(120 * var(--res));
 }
 .inside .sub-container-three .tech-logo-1 #img2 {
   width: calc(120 * var(--res));
+  height: calc(120 * var(--res));
 }
 .inside .sub-container-three .tech-logo-1 #img3 {
   width: calc(120 * var(--res));
+  height: calc(120 * var(--res));
 }
 .inside .sub-container-three .tech-logo-1 #img4 {
   width: calc(120 * var(--res));
+  height: calc(120 * var(--res));
 }
 .inside .sub-container-three .tech-logo-1 #img5 {
   width: calc(120 * var(--res));
+  height: calc(120 * var(--res));
 }
 .inside .sub-container-three .tech-logo-2 {
   display: flex;
