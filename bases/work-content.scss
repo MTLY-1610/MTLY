@@ -3,7 +3,7 @@
 .inside {
     @include work-cont-desktop;
     flex-direction: column;
-    height: 90vh;
+    height: 85vh;
     top: 0;
    
     .top-container{
@@ -176,6 +176,9 @@
             align-items: stretch;
             justify-content: space-between;
             width:50%;
+            @include for-phone-only{
+                width:90%;
+            } 
 
             img {
                 display: flex;
