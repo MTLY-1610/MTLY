@@ -11,6 +11,11 @@ trigger1.addEventListener('mouseenter', () => {
     TL.play();
 
 })
+trigger1.addEventListener('ontouchstart', () => {
+
+    TL.play();
+
+})
 trigger1.addEventListener('click', () => {
 
     TL.reverse();
