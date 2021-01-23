@@ -12,7 +12,7 @@ a {
   position: fixed;
   display: flex;
   flex-direction: row;
-  height: 15vh;
+  height: 10vh;
   bottom: 0;
   z-index: 100;
   width: 100vw;
@@ -136,7 +136,7 @@ li:hover {
   display: flex;
   padding: 4em;
   flex-direction: column;
-  height: 85vh;
+  height: 90vh;
   top: 0;
 }
 .inside .top-container {
@@ -147,6 +147,7 @@ li:hover {
   width: 100%;
   font-size: 12vw;
   line-height: 0.9em;
+  margin-bottom: 1rem;
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: black;
 }
@@ -169,7 +170,7 @@ li:hover {
   font-weight: 900;
   text-transform: uppercase;
   text-align: start;
-  line-height: 0.9em;
+  line-height: 1em;
 }
 @media (max-width: 599px) {
   .inside .sub-container-one #p-abilities {
@@ -180,7 +181,7 @@ li:hover {
   }
 }
 .inside .sub-container-two {
-  height: 20vh;
+  height: 15vh;
   margin-bottom: 1rem;
   line-height: 2em;
 }
@@ -276,17 +277,18 @@ li:hover {
 }
 .inside .sub-container-three .trigger_2 {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-  color: white;
-  width: 30vw;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: black;
+  width: 50%;
   height: 10vh;
   text-transform: uppercase;
   margin: 0;
+  -webkit-text-stroke-width: 1.7px;
+  -webkit-text-stroke-color: black;
 }
 .inside .sub-container-three .trigger_2 h1 {
-  font-size: 2vw;
+  font-size: 4vw;
   font-weight: 900;
 }
 @media (max-width: 599px) {
@@ -357,28 +359,40 @@ li:hover {
   flex-direction: row;
   align-items: stretch;
   justify-content: space-between;
-  margin-left: 2rem;
-  width: 50vw;
-  height: 20vh;
+  width: 50%;
+}
+@media (max-width: 599px) {
+  .inside .sub-container-three .tech-logo-2 {
+    width: 90%;
+  }
+}
+.inside .sub-container-three .tech-logo-2 img {
+  display: flex;
+  transform: scale(0);
 }
 .inside .sub-container-three .tech-logo-2 img {
   display: flex;
   transform: scale(0);
 }
 .inside .sub-container-three .tech-logo-2 #img6 {
-  width: calc(100 * var(--res));
+  width: calc(120 * var(--res));
+  height: calc(120 * var(--res));
 }
 .inside .sub-container-three .tech-logo-2 #img7 {
-  width: calc(100 * var(--res));
+  width: calc(120 * var(--res));
+  height: calc(120 * var(--res));
 }
 .inside .sub-container-three .tech-logo-2 #img8 {
-  width: calc(100 * var(--res));
+  width: calc(120 * var(--res));
+  height: calc(120 * var(--res));
 }
 .inside .sub-container-three .tech-logo-2 #img9 {
-  width: calc(100 * var(--res));
+  width: calc(120 * var(--res));
+  height: calc(120 * var(--res));
 }
 .inside .sub-container-three .tech-logo-2 #img10 {
-  width: calc(100 * var(--res));
+  width: calc(120 * var(--res));
+  height: calc(120 * var(--res));
 }
 
 *, ::before, ::after {

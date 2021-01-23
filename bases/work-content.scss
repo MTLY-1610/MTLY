@@ -3,7 +3,7 @@
 .inside {
     @include work-cont-desktop;
     flex-direction: column;
-    height: 85vh;
+    height: 90vh;
     top: 0;
    
     .top-container{
@@ -14,6 +14,7 @@
             width: 100%;
             font-size: 12vw;
             line-height:.9em;
+            margin-bottom: 1rem;
             -webkit-text-stroke-width: 3px;
             -webkit-text-stroke-color: black;
             @include for-phone-only{
@@ -36,7 +37,7 @@
             font-weight: 900;
             text-transform: uppercase;
             text-align: start;
-            line-height:.9em;
+            line-height:1em;
             @include for-phone-only{
                 font-size: 5vw;
                 line-height:.9em;
@@ -47,7 +48,7 @@
     }
 
     .sub-container-two{
-        height:20vh;
+        height:15vh;
         margin-bottom: 1rem;
         line-height:2em;
         p{
@@ -137,17 +138,18 @@
         }
         .trigger_2 {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: black;
-            color:white;
-            width: 30vw ;
+            align-items: flex-start;
+            justify-content: flex-start;
+            color:black;
+            width: 50% ;
             height: 10vh;
             text-transform: uppercase;
             margin:0;
+            -webkit-text-stroke-width: 1.7px;
+            -webkit-text-stroke-color: black;
            
             h1{
-                font-size: 2vw;
+                font-size: 4vw;
                 font-weight: 900;
 
                 @include for-phone-only{
@@ -220,9 +222,19 @@
             flex-direction: row;
             align-items: stretch;
             justify-content: space-between;
-            margin-left: 2rem;
-            width:50vw;
-            height: 20vh;
+            width:50%;
+            @include for-phone-only{
+                width:90%;
+            } 
+
+            img {
+                display: flex;
+                transform:  scale(0); 
+
+              @include for-phone-only{
+                // transform:  scale(1); 
+            } 
+            }
 
             img {
                 display: flex;
@@ -230,23 +242,28 @@
             }
 
             #img6{
-                width: calc(100 * var(--res));
+                width: calc(120 * var(--res));
+                height: calc(120 * var(--res));
             }
             
             #img7{
-                width: calc(100 * var(--res));
+                width: calc(120 * var(--res));
+                height: calc(120 * var(--res));
             }
             
             #img8{
-                width: calc(100 * var(--res));
+                width: calc(120 * var(--res));
+                height: calc(120 * var(--res));
             }
             
             #img9{
-                width: calc(100 * var(--res));
+                width: calc(120 * var(--res));
+                height: calc(120 * var(--res));
             }
             
             #img10{
-                width: calc(100 * var(--res));
+                width: calc(120 * var(--res));
+                height: calc(120 * var(--res));
             }
         }
     }
