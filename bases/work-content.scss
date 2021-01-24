@@ -3,7 +3,8 @@
 .inside {
   @include work-cont-desktop;
   flex-direction: column;
-  height: 100%vh;
+  height: 100%;
+
   top: 0;
 
   .top-container {
@@ -17,6 +18,12 @@
       margin-bottom: 1rem;
       -webkit-text-stroke-width: 3px;
       -webkit-text-stroke-color: black;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
       @include for-phone-only {
         font-size: 16vw;
         line-height: 0.9em;
@@ -104,7 +111,7 @@
       align-items: flex-start;
       justify-content: flex-start;
       color: black;
-      width: 50%;
+      width: 100%;
       height: 10vh;
       text-transform: uppercase;
       margin: 0;
@@ -146,12 +153,18 @@
       align-items: flex-start;
       justify-content: flex-start;
       color: black;
-      width: 50%;
+      width: 100vw;
       height: 10vh;
       text-transform: uppercase;
       margin: 0;
       -webkit-text-stroke-width: 1.7px;
       -webkit-text-stroke-color: black;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
 
       h1 {
         font-size: 4vw;
@@ -188,7 +201,7 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      width: 70%;
+      width: 80vmin;
       @include for-phone-only {
         width: 90%;
       }
@@ -231,9 +244,13 @@
     .tech-logo-2 {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
-      width: 100%;
+      width: 90vmin;
+      // @include for-tablet-landscape-up {
+      //   width: 80%;
+      // }
       @include for-phone-only {
         width: 90%;
       }

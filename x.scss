@@ -1,54 +1,77 @@
-@import 'bases/menu','bases/anim','bases/mixins', 'bases/work-content';
+@import "bases/menu", "bases/anim", "bases/mixins", "bases/work-content",
+  "bases/home", "bases/about.scss", "bases/contact";
 
-*, ::before, ::after {
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 :root {
-    --res: calc(0.10 * 1vmin);
+  --res: calc(0.1 * 1vmin);
 }
 body {
-    background-image: repeating-radial-gradient(circle at center center, transparent 0px, transparent 13px,rgba(0,0,0,0.05) 13px, rgba(0,0,0,0.03) 24px,transparent 24px, transparent 62px,rgba(0,0,0,0.03) 62px, rgba(0,0,0,0.03) 96px),repeating-radial-gradient(circle at center center, rgb(255,255,255) 0px, rgb(255,255,255) 14px,rgb(255,255,255) 14px, rgb(255,255,255) 18px,rgb(255,255,255) 18px, rgb(255,255,255) 28px,rgb(255,255,255) 28px, rgb(255,255,255) 32px); background-size: 21px 21px;
-    height:100vh;
-    overflow-x: hidden;
+  background-image: repeating-radial-gradient(
+      circle at center center,
+      transparent 0px,
+      transparent 13px,
+      rgba(0, 0, 0, 0.05) 13px,
+      rgba(0, 0, 0, 0.03) 24px,
+      transparent 24px,
+      transparent 62px,
+      rgba(0, 0, 0, 0.03) 62px,
+      rgba(0, 0, 0, 0.03) 96px
+    ),
+    repeating-radial-gradient(
+      circle at center center,
+      rgb(255, 255, 255) 0px,
+      rgb(255, 255, 255) 14px,
+      rgb(255, 255, 255) 14px,
+      rgb(255, 255, 255) 18px,
+      rgb(255, 255, 255) 18px,
+      rgb(255, 255, 255) 28px,
+      rgb(255, 255, 255) 28px,
+      rgb(255, 255, 255) 32px
+    );
+  background-size: 21px 21px;
+  height: 100vh;
+  overflow-x: hidden;
 }
-html, body, .main-container, .container{
-    scroll-behavior: smooth;
+html,
+body,
+.main-container,
+.container {
+  scroll-behavior: smooth;
 }
 
-.main-container{
-    width: 100vw;
-    height: 100vh;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    scroll-snap-type: x mandatory;
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
 }
-.container{
-   width: 500vw;
-   display: flex;
-   flex-direction: row;
-   
+.container {
+  width: 500vw;
+  display: flex;
+  flex-direction: row;
 }
 .container .one {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    scroll-snap-align: center;
-  
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  scroll-snap-align: center;
 }
-::-webkit-scrollbar{
-    display: none;
+::-webkit-scrollbar {
+  display: none;
 }
 @include for-phone-only {
-
-    .inside{
-        padding: 2rem;
-        height: 90vh; 
-    }
-   
+  .inside {
+    padding: 2rem;
+    height: 90vh;
+  }
 }

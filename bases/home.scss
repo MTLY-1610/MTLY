@@ -1,0 +1,16 @@
+@import "mixins";
+
+.inside_1 {
+  @include work-cont-desktop;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 100%;
+  .zero {
+    display: flex;
+    font-size: 25vw;
+    text-align: center;
+    line-height: 18rem;
+  }
+}
