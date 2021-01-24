@@ -1,3 +1,4 @@
+@import "mixins";
 .inside_5 {
   @include work-cont-desktop;
   display: flex;

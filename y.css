@@ -424,6 +424,23 @@ li:hover {
   line-height: 18rem;
 }
 
+.inside_2 {
+  width: 100vw;
+  display: flex;
+  padding: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.inside_2 .about {
+  text-align: center;
+  display: flex;
+  font-size: 4rem;
+  width: 100%;
+}
+
 .inside_5 {
   width: 100vw;
   display: flex;
