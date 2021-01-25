@@ -1,18 +1,16 @@
 @import "mixins";
 
-.inside_3 {
+.inside_4 {
   @include work-cont-desktop;
   flex-direction: column;
   height: 100%;
   @include for-phone-only {
     padding: 2rem;
-    height: 90%;
   }
-
-  .top-container {
+  .top-container-2 {
     height: 20%;
     margin-bottom: 1rem;
-    .main-title {
+    .main-title-2 {
       display: flex;
       width: 100%;
       font-size: 12vw;
@@ -35,11 +33,11 @@
     }
   }
 
-  .sub-container-one {
+  .sub-container-one-2 {
     height: 30vh;
     margin-bottom: 1rem;
 
-    #p-abilities {
+    #p-abilities-2 {
       display: flex;
       font-size: 3vw;
       font-weight: 900;
@@ -54,7 +52,7 @@
     }
   }
 
-  .sub-container-two {
+  .sub-container-two-2 {
     height: 15vh;
     margin-bottom: 1rem;
     line-height: 2em;
@@ -97,7 +95,7 @@
     }
   }
 
-  .sub-container-three {
+  .sub-container-three-2 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -108,7 +106,7 @@
       flex-direction: column;
     }
 
-    .trigger_1 {
+    .trigger_2 {
       display: flex;
       align-items: flex-start;
       justify-content: flex-start;
@@ -125,6 +123,10 @@
       -moz-user-select: none;
       -ms-user-select: none;
       user-select: none;
+      @include for-phone-only {
+        width: 100%;
+        height: 6vh;
+      }
       h1 {
         font-size: 4vw;
         font-weight: 900;
@@ -133,22 +135,17 @@
           font-size: 7vw;
         }
       }
-
-      @include for-phone-only {
-        width: 100%;
-        height: 8vh;
-      }
     }
 
-    .tech-logo-1 {
+    .tech-logo-2 {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      width: 80vmin;
-
+      width: 90vmin;
       @include for-phone-only {
-        width: 90%;
+        width: 100%;
+        height: 70%;
         flex-wrap: wrap;
         justify-content: space-around;
       }
@@ -162,7 +159,7 @@
         }
       }
 
-      #img1 {
+      #img6 {
         width: calc(120 * var(--res));
         height: calc(120 * var(--res));
         @include for-phone-only {
@@ -171,7 +168,7 @@
         }
       }
 
-      #img2 {
+      #img7 {
         width: calc(120 * var(--res));
         height: calc(120 * var(--res));
         @include for-phone-only {
@@ -180,7 +177,7 @@
         }
       }
 
-      #img3 {
+      #img8 {
         width: calc(120 * var(--res));
         height: calc(120 * var(--res));
         @include for-phone-only {
@@ -189,7 +186,7 @@
         }
       }
 
-      #img4 {
+      #img9 {
         width: calc(120 * var(--res));
         height: calc(120 * var(--res));
         @include for-phone-only {
@@ -198,13 +195,18 @@
         }
       }
 
-      #img5 {
+      #img10 {
         width: calc(120 * var(--res));
         height: calc(120 * var(--res));
         @include for-phone-only {
           width: calc(220 * var(--res));
           height: calc(220 * var(--res));
         }
+      }
+
+      #img11 {
+        width: calc(10 * var(--res));
+        height: calc(120 * var(--res));
       }
     }
   }

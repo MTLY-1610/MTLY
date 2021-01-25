@@ -7,11 +7,18 @@
   align-items: center;
   justify-content: center;
   height: 100%;
+  @include for-phone-only {
+    padding: 2rem;
+    height: 90vh;
+  }
 
   .about {
     text-align: center;
     display: flex;
-    font-size: 4rem;
+    font-size: 4vw;
     width: 100%;
+    @include for-phone-only {
+      font-size: 4vh;
+    }
   }
 }
