@@ -300,7 +300,7 @@ li:hover {
 }
 @media (max-width: 599px) {
   .inside_3 .sub-container-three .trigger_1 h1 {
-    font-size: 7vw;
+    height: 7vw;
   }
 }
 .inside_3 .sub-container-three .tech-logo-1 {
@@ -612,16 +612,6 @@ li:hover {
 }
 .inside_4 .sub-container-three-2 .tech-logo-2 #img10 {
   width: calc(120 * var(--res));
-  height: calc(120 * var(--res));
-}
-@media (max-width: 599px) {
-  .inside_4 .sub-container-three-2 .tech-logo-2 #img10 {
-    width: calc(220 * var(--res));
-    height: calc(220 * var(--res));
-  }
-}
-.inside_4 .sub-container-three-2 .tech-logo-2 #img10 {
-  width: calc(10 * var(--res));
   height: calc(120 * var(--res));
 }
 @media (max-width: 599px) {

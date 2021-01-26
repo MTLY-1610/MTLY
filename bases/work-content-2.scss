@@ -217,15 +217,6 @@
           height: calc(220 * var(--res));
         }
       }
-
-      #img10 {
-        width: calc(10 * var(--res));
-        height: calc(120 * var(--res));
-        @include for-phone-only {
-          width: calc(220 * var(--res));
-          height: calc(220 * var(--res));
-        }
-      }
     }
   }
 }
