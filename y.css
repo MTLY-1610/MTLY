@@ -295,7 +295,7 @@ li:hover {
 }
 @media (max-width: 599px) {
   .inside_3 .sub-container-three .trigger_1 h1 #hover_icon {
-    font-size: 4vw;
+    height: 4vw;
   }
 }
 @media (max-width: 599px) {
@@ -671,14 +671,14 @@ li:hover {
     height: 90vh;
   }
 }
-.inside_2 .about {
+.inside_2 #about {
   text-align: center;
   display: flex;
   font-size: 4vw;
   width: 100%;
 }
 @media (max-width: 599px) {
-  .inside_2 .about {
+  .inside_2 #about {
     font-size: 4vh;
   }
 }

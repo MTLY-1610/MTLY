@@ -144,7 +144,7 @@
         #hover_icon {
           height: 3vw;
           @include for-phone-only {
-            font-size: 4vw;
+            height: 4vw;
           }
         }
 
