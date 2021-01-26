@@ -2,23 +2,22 @@
 
 .inside_2 {
   @include work-cont-desktop;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100%;
   @include for-phone-only {
-    padding: 2rem;
+    padding: 3em;
     height: 90vh;
   }
 
   #about {
     text-align: center;
     display: flex;
-    font-size: 4vw;
+    font-size: 2em;
     width: 100%;
     @include for-phone-only {
-      font-size: 4vh;
+      font-size: 4em;
     }
   }
 }

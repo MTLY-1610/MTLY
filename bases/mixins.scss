@@ -1,21 +1,47 @@
-@mixin work-cont-desktop{
-    width: 100vw;
-    display: flex;
-    padding: 4em;  
+@mixin work-cont-desktop {
+  width: 100%;
+  display: flex;
+  padding-left: 4em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-right: 4em;
+}
+@mixin unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 @mixin for-phone-only {
-    @media (max-width: 599px) { @content; }
+  @media (max-width: 599px) {
+    @content;
+  }
 }
 @mixin for-tablet-portrait-up {
-    @media (min-width: 600px) { @content; }
+  @media (min-width: 600px) {
+    @content;
+  }
 }
 @mixin for-tablet-landscape-up {
-    @media (min-width: 900px) { @content; }
+  @media (max-width: 900px) {
+    @content;
+  }
 }
 @mixin for-desktop-up {
-    @media (min-width: 1200px) { @content; }
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+@mixin for-desktop {
+  @media (max-width: 900px) and (min-width: 600px) {
+    @content;
+  }
 }
 @mixin for-big-desktop-up {
-    @media (min-width: 1800px) { @content; }
+  @media (min-width: 1200px) {
+    @content;
+  }
 }
