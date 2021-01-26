@@ -12,6 +12,9 @@
   .top-container {
     height: 20%;
     margin-bottom: 1rem;
+    @include for-big-desktop-up {
+      margin-bottom: 3rem;
+    }
     .main-title {
       display: flex;
       width: 100%;
@@ -38,6 +41,9 @@
   .sub-container-one {
     height: 30vh;
     margin-bottom: 1rem;
+    @include for-big-desktop-up {
+      margin-bottom: 3rem;
+    }
 
     #p-abilities {
       display: flex;
@@ -58,6 +64,9 @@
     height: 15vh;
     margin-bottom: 1rem;
     line-height: 2em;
+    @include for-big-desktop-up {
+      margin-bottom: 2rem;
+    }
     p {
       @include for-phone-only {
         line-height: 0.9em;
@@ -125,18 +134,23 @@
       -moz-user-select: none;
       -ms-user-select: none;
       user-select: none;
+      @include for-phone-only {
+        width: 100%;
+        height: 6vh;
+      }
       h1 {
         font-size: 4vw;
         font-weight: 900;
+        #hover_icon {
+          height: 3vw;
+          @include for-phone-only {
+            font-size: 4vw;
+          }
+        }
 
         @include for-phone-only {
-          font-size: 7vw;
+          height: 7vw;
         }
-      }
-
-      @include for-phone-only {
-        width: 100%;
-        height: 8vh;
       }
     }
 
@@ -145,10 +159,10 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      width: 80vmin;
-
+      width: 90vmin;
       @include for-phone-only {
-        width: 90%;
+        width: 100%;
+        height: 100%;
         flex-wrap: wrap;
         justify-content: space-around;
       }
@@ -199,6 +213,15 @@
       }
 
       #img5 {
+        width: calc(120 * var(--res));
+        height: calc(120 * var(--res));
+        @include for-phone-only {
+          width: calc(220 * var(--res));
+          height: calc(220 * var(--res));
+        }
+      }
+
+      #img6 {
         width: calc(120 * var(--res));
         height: calc(120 * var(--res));
         @include for-phone-only {

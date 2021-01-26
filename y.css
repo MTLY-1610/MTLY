@@ -148,6 +148,11 @@ li:hover {
   height: 20%;
   margin-bottom: 1rem;
 }
+@media (min-width: 1800px) {
+  .inside_3 .top-container {
+    margin-bottom: 3rem;
+  }
+}
 .inside_3 .top-container .main-title {
   display: flex;
   width: 100%;
@@ -175,6 +180,11 @@ li:hover {
   height: 30vh;
   margin-bottom: 1rem;
 }
+@media (min-width: 1800px) {
+  .inside_3 .sub-container-one {
+    margin-bottom: 3rem;
+  }
+}
 .inside_3 .sub-container-one #p-abilities {
   display: flex;
   font-size: 3vw;
@@ -194,6 +204,11 @@ li:hover {
   height: 15vh;
   margin-bottom: 1rem;
   line-height: 2em;
+}
+@media (min-width: 1800px) {
+  .inside_3 .sub-container-two {
+    margin-bottom: 2rem;
+  }
 }
 @media (max-width: 599px) {
   .inside_3 .sub-container-two p {
@@ -265,19 +280,27 @@ li:hover {
   -ms-user-select: none;
   user-select: none;
 }
+@media (max-width: 599px) {
+  .inside_3 .sub-container-three .trigger_1 {
+    width: 100%;
+    height: 6vh;
+  }
+}
 .inside_3 .sub-container-three .trigger_1 h1 {
   font-size: 4vw;
   font-weight: 900;
 }
+.inside_3 .sub-container-three .trigger_1 h1 #hover_icon {
+  height: 3vw;
+}
 @media (max-width: 599px) {
-  .inside_3 .sub-container-three .trigger_1 h1 {
-    font-size: 7vw;
+  .inside_3 .sub-container-three .trigger_1 h1 #hover_icon {
+    font-size: 4vw;
   }
 }
 @media (max-width: 599px) {
-  .inside_3 .sub-container-three .trigger_1 {
-    width: 100%;
-    height: 8vh;
+  .inside_3 .sub-container-three .trigger_1 h1 {
+    font-size: 7vw;
   }
 }
 .inside_3 .sub-container-three .tech-logo-1 {
@@ -285,11 +308,12 @@ li:hover {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 80vmin;
+  width: 90vmin;
 }
 @media (max-width: 599px) {
   .inside_3 .sub-container-three .tech-logo-1 {
-    width: 90%;
+    width: 100%;
+    height: 100%;
     flex-wrap: wrap;
     justify-content: space-around;
   }
@@ -348,6 +372,16 @@ li:hover {
     height: calc(220 * var(--res));
   }
 }
+.inside_3 .sub-container-three .tech-logo-1 #img6 {
+  width: calc(120 * var(--res));
+  height: calc(120 * var(--res));
+}
+@media (max-width: 599px) {
+  .inside_3 .sub-container-three .tech-logo-1 #img6 {
+    width: calc(220 * var(--res));
+    height: calc(220 * var(--res));
+  }
+}
 
 .inside_4 {
   width: 100vw;
@@ -359,11 +393,17 @@ li:hover {
 @media (max-width: 599px) {
   .inside_4 {
     padding: 2rem;
+    height: 90%;
   }
 }
 .inside_4 .top-container-2 {
   height: 20%;
   margin-bottom: 1rem;
+}
+@media (min-width: 1800px) {
+  .inside_4 .top-container-2 {
+    margin-bottom: 3rem;
+  }
 }
 .inside_4 .top-container-2 .main-title-2 {
   display: flex;
@@ -391,6 +431,11 @@ li:hover {
 .inside_4 .sub-container-one-2 {
   height: 30vh;
   margin-bottom: 1rem;
+}
+@media (min-width: 1800px) {
+  .inside_4 .sub-container-one-2 {
+    margin-bottom: 3rem;
+  }
 }
 .inside_4 .sub-container-one-2 #p-abilities-2 {
   display: flex;
@@ -492,6 +537,15 @@ li:hover {
   font-size: 4vw;
   font-weight: 900;
 }
+.inside_4 .sub-container-three-2 .trigger_2 h1 #hover_icon {
+  height: 3vw;
+  color: #decee4;
+}
+@media (max-width: 599px) {
+  .inside_4 .sub-container-three-2 .trigger_2 h1 #hover_icon {
+    height: 6vw;
+  }
+}
 @media (max-width: 599px) {
   .inside_4 .sub-container-three-2 .trigger_2 h1 {
     font-size: 7vw;
@@ -507,7 +561,7 @@ li:hover {
 @media (max-width: 599px) {
   .inside_4 .sub-container-three-2 .tech-logo-2 {
     width: 100%;
-    height: 70%;
+    height: 100%;
     flex-wrap: wrap;
     justify-content: space-around;
   }
@@ -566,9 +620,15 @@ li:hover {
     height: calc(220 * var(--res));
   }
 }
-.inside_4 .sub-container-three-2 .tech-logo-2 #img11 {
+.inside_4 .sub-container-three-2 .tech-logo-2 #img10 {
   width: calc(10 * var(--res));
   height: calc(120 * var(--res));
+}
+@media (max-width: 599px) {
+  .inside_4 .sub-container-three-2 .tech-logo-2 #img10 {
+    width: calc(220 * var(--res));
+    height: calc(220 * var(--res));
+  }
 }
 
 .inside_1 {

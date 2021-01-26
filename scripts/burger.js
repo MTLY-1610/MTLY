@@ -23,14 +23,3 @@ function navSlide() {
 }
 
 navSlide();
-
-function navHide() {
-  const toggles = document.querySelector(".toggle");
-  const navLink = document.querySelectorAll(".ul_second li a");
-
-  navLink.addEventListener("click", () => {
-    //Toggle Nav
-    toggles.classList.toggle("burger");
-  });
-}
-navHide();
