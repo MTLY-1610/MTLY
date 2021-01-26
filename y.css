@@ -735,6 +735,7 @@ li:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   height: 100%;
 }
 .inside_5 .contact-container {
@@ -752,24 +753,22 @@ li:hover {
   }
 }
 .inside_5 .contact-container #cel {
-  width: 8rem !important;
+  width: 6em !important;
 }
 @media (max-width: 599px) {
   .inside_5 .contact-container #cel {
-    width: 3.5rem !important;
+    width: 3.2rem !important;
   }
 }
 .inside_5 .contact-container .contact-icons {
   display: flex;
-  width: 10rem;
+  width: 8em;
+  height: auto;
 }
 @media (max-width: 599px) {
   .inside_5 .contact-container .contact-icons {
-    width: 4rem;
+    width: 4em;
   }
-}
-.inside_5 .contact-container .contact-icons :hover {
-  color: chartreuse;
 }
 
 *,
