@@ -46,7 +46,7 @@
       margin-bottom: 1em;
     }
     @include for-phone-only {
-      height: 25%;
+      height: 20%;
     }
 
     #p-abilities {
@@ -69,6 +69,7 @@
     margin-bottom: 2em;
     @include for-phone-only {
       margin-bottom: 1em;
+      height: 20%;
     }
 
     #p-client {
@@ -119,7 +120,7 @@
     }
     @include for-phone-only {
       flex-direction: column;
-      height: 30%;
+      height: 40%;
     }
 
     .trigger_1 {

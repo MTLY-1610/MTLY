@@ -194,7 +194,7 @@ li:hover {
 }
 @media (max-width: 599px) {
   .inside_3 .sub-container-one {
-    height: 25%;
+    height: 20%;
   }
 }
 .inside_3 .sub-container-one #p-abilities {
@@ -219,6 +219,7 @@ li:hover {
 @media (max-width: 599px) {
   .inside_3 .sub-container-two {
     margin-bottom: 1em;
+    height: 20%;
   }
 }
 .inside_3 .sub-container-two #p-client {
@@ -273,7 +274,7 @@ li:hover {
 @media (max-width: 599px) {
   .inside_3 .sub-container-three {
     flex-direction: column;
-    height: 30%;
+    height: 40%;
   }
 }
 .inside_3 .sub-container-three .trigger_1 {
@@ -424,7 +425,7 @@ li:hover {
 }
 @media (max-width: 599px) {
   .inside_4 .top-container-2 {
-    height: 25%;
+    height: 20%;
   }
 }
 .inside_4 .top-container-2 .main-title-2 {
@@ -461,7 +462,7 @@ li:hover {
 }
 @media (max-width: 599px) {
   .inside_4 .sub-container-one-2 {
-    height: 25%;
+    height: 20%;
   }
 }
 .inside_4 .sub-container-one-2 #p-abilities-2 {
@@ -495,6 +496,7 @@ li:hover {
 @media (max-width: 599px) {
   .inside_4 .sub-container-two-2 p {
     line-height: 15px;
+    height: 20%;
   }
 }
 .inside_4 .sub-container-two-2 a {
@@ -541,7 +543,7 @@ li:hover {
 @media (max-width: 599px) {
   .inside_4 .sub-container-three-2 {
     flex-direction: column;
-    height: 30%;
+    height: 40%;
   }
 }
 .inside_4 .sub-container-three-2 .trigger_2 {
