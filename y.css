@@ -818,6 +818,11 @@ body,
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
 }
+@media (max-width: 599px) {
+  .main-container {
+    height: 90vh;
+  }
+}
 
 .container {
   width: 500vw;

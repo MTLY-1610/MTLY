@@ -54,6 +54,9 @@ body,
   overflow-x: scroll;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
+  @include for-phone-only {
+    height: 90vh;
+  }
 }
 .container {
   width: 500vw;
