@@ -274,7 +274,7 @@ li:hover {
 @media (max-width: 599px) {
   .inside_3 .sub-container-three {
     flex-direction: column;
-    height: 40%;
+    height: 170px;
   }
 }
 .inside_3 .sub-container-three .trigger_1 {
@@ -542,7 +542,7 @@ li:hover {
 @media (max-width: 599px) {
   .inside_4 .sub-container-three-2 {
     flex-direction: column;
-    height: 40%;
+    height: 170px;
   }
 }
 .inside_4 .sub-container-three-2 .trigger_2 {
