@@ -840,7 +840,7 @@ body,
 @media (max-width: 599px) {
   .inside {
     padding: 1em;
-    height: 90vh;
+    height: 100%;
   }
 }
 
