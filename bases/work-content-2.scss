@@ -13,7 +13,7 @@
     height: 20%;
     margin-bottom: 2em;
     @include for-phone-only {
-      height: 20%;
+      height: 100px;
     }
     .main-title-2 {
       display: flex;
@@ -45,7 +45,7 @@
       margin-bottom: 1em;
     }
     @include for-phone-only {
-      height: 20%;
+      height: 80px;
     }
 
     #p-abilities-2 {
@@ -67,7 +67,7 @@
     height: 3em;
     margin-bottom: 2rem;
     @include for-phone-only {
-      height: 20%;
+      height: 80px;
       margin-bottom: 1rem;
     }
     p {
