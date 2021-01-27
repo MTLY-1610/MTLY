@@ -833,14 +833,14 @@ body,
 
 .one {
   width: 100%;
-  height: 100%;
+  height: 90%;
   display: flex;
   flex-direction: column;
   scroll-snap-align: center;
 }
 @media (max-width: 599px) {
   .one {
-    height: 100%;
+    height: 90%;
   }
 }
 
