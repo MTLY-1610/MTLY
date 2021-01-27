@@ -65,7 +65,7 @@
 
   .sub-container-two-2 {
     height: 20%;
-    margin-bottom: 2rem;
+    margin-bottom: 2em;
     @include for-phone-only {
       height: 100px;
       margin-bottom: 1em;
