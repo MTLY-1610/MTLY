@@ -44,7 +44,8 @@ body {
 html,
 body,
 .main-container,
-.container {
+.container,
+.main-nav .ul_second li {
   scroll-behavior: smooth;
 }
 
@@ -60,9 +61,6 @@ body,
   height: 90%;
   display: flex;
   flex-direction: row;
-  @include for-phone-only {
-    height: 90%;
-  }
 }
 .one {
   width: 100%;
