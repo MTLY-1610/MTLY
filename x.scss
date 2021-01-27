@@ -61,7 +61,7 @@ body,
   display: flex;
   flex-direction: row;
   @include for-phone-only {
-    height: 90vh;
+    height: 80vh;
   }
 }
 .container .one {
