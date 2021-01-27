@@ -2,6 +2,7 @@ function navSlide() {
   const burger = document.querySelector(".burger");
   const nav = document.querySelector(".ul_second");
   const navLinks = document.querySelectorAll(".ul_second li a");
+  // closes  Links
   nav.addEventListener("click", () => {
     nav.classList.toggle("nav-active");
     burger.classList.toggle("toggle");
@@ -15,6 +16,7 @@ function navSlide() {
       }
     });
   });
+  // Animate Links
   burger.addEventListener("click", () => {
     navLinks.forEach((link, index) => {
       if (link.style.animation) {
@@ -25,9 +27,10 @@ function navSlide() {
         }s`;
       }
     });
+
     //Toggle Nav
     nav.classList.toggle("nav-active");
-    // Animate Links
+
     // Burger Animation
     burger.classList.toggle("toggle");
   });
