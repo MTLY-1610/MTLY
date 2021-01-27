@@ -7,6 +7,9 @@
   align-items: center;
   justify-content: center;
   height: 100%;
+  @include for-phone-only {
+    height: 90%;
+  }
   .contact-container {
     display: flex;
     flex-direction: row;

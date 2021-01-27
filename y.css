@@ -218,7 +218,7 @@ li:hover {
 }
 @media (max-width: 599px) {
   .inside_3 .sub-container-two {
-    height: 16%;
+    height: 13%;
     margin-bottom: 1em;
   }
 }
@@ -722,7 +722,7 @@ li:hover {
 @media (max-width: 599px) {
   .inside_2 {
     padding: 3em;
-    height: 90vh;
+    height: 90%;
   }
 }
 .inside_2 #about {
@@ -749,6 +749,11 @@ li:hover {
   align-items: center;
   justify-content: center;
   height: 100%;
+}
+@media (max-width: 599px) {
+  .inside_5 {
+    height: 90%;
+  }
 }
 .inside_5 .contact-container {
   display: flex;
