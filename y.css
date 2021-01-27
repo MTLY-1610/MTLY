@@ -310,11 +310,6 @@ li:hover {
     height: 4vw;
   }
 }
-@media (max-width: 599px) {
-  .inside_3 .sub-container-three .trigger_1 h1 {
-    height: 7vw;
-  }
-}
 .inside_3 .sub-container-three .tech-logo-1 {
   display: flex;
   flex-direction: row;
@@ -583,11 +578,6 @@ li:hover {
     height: 4vw;
   }
 }
-@media (max-width: 599px) {
-  .inside_4 .sub-container-three-2 .trigger_2 h1 {
-    font-size: 7vw;
-  }
-}
 .inside_4 .sub-container-three-2 .tech-logo-2 {
   display: flex;
   flex-direction: row;
@@ -820,7 +810,7 @@ body,
 
 .container {
   width: 500vw;
-  height: 90vh;
+  height: 90%;
   display: flex;
   flex-direction: row;
 }
@@ -830,7 +820,7 @@ body,
   }
 }
 
-.container .one {
+.one {
   width: 100%;
   height: 100%;
   display: flex;
@@ -838,7 +828,7 @@ body,
   scroll-snap-align: center;
 }
 @media (max-width: 599px) {
-  .container .one {
+  .one {
     height: 90vh;
   }
 }

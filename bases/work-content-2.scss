@@ -150,10 +150,6 @@
             height: 4vw;
           }
         }
-
-        @include for-phone-only {
-          font-size: 7vw;
-        }
       }
     }
 
