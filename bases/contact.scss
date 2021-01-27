@@ -31,8 +31,18 @@
       display: flex;
       width: 8em;
       height: auto;
+
       @include for-phone-only {
         width: 4em;
+      }
+    }
+    .contact-icons :hover {
+      display: flex;
+      width: 5em;
+      height: auto;
+
+      @include for-phone-only {
+        width: 1em;
       }
     }
   }
