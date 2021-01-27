@@ -7,13 +7,13 @@
   @include for-phone-only {
     padding-right: 4em;
     padding-left: 4em;
-    height: 90%;
+    height: 100%;
   }
   .top-container-2 {
     height: 20%;
     margin-bottom: 2em;
     @include for-phone-only {
-      height: 18%;
+      height: 25%;
     }
     .main-title-2 {
       display: flex;
@@ -45,7 +45,7 @@
       margin-bottom: 1em;
     }
     @include for-phone-only {
-      height: 16%;
+      height: 25%;
     }
 
     #p-abilities-2 {
@@ -67,7 +67,7 @@
     height: 3em;
     margin-bottom: 2rem;
     @include for-phone-only {
-      height: 16%;
+      height: 20%;
       margin-bottom: 1rem;
     }
     p {
@@ -118,7 +118,7 @@
     }
     @include for-phone-only {
       flex-direction: column;
-      height: 35%;
+      height: 30%;
     }
 
     .trigger_2 {

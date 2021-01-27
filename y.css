@@ -55,7 +55,7 @@ li:hover {
     position: fixed;
     display: flex;
     flex-direction: row;
-    height: 10vh;
+    height: 10%;
     bottom: 0;
     z-index: 100;
     width: 100vw;
@@ -148,7 +148,7 @@ li:hover {
   .inside_3 {
     padding-right: 4em;
     padding-left: 4em;
-    height: 90%;
+    height: 100%;
   }
 }
 .inside_3 .top-container {
@@ -157,7 +157,7 @@ li:hover {
 }
 @media (max-width: 599px) {
   .inside_3 .top-container {
-    height: 18%;
+    height: 25%;
   }
 }
 .inside_3 .top-container .main-title {
@@ -184,17 +184,12 @@ li:hover {
   }
 }
 .inside_3 .sub-container-one {
-  height: 4.5em;
+  height: 25%;
   margin-bottom: 2em;
 }
 @media (min-width: 1200px) {
   .inside_3 .sub-container-one {
     margin-bottom: 1em;
-  }
-}
-@media (max-width: 599px) {
-  .inside_3 .sub-container-one {
-    height: 16%;
   }
 }
 .inside_3 .sub-container-one #p-abilities {
@@ -213,12 +208,11 @@ li:hover {
   }
 }
 .inside_3 .sub-container-two {
-  height: 3em;
+  height: 20%;
   margin-bottom: 2em;
 }
 @media (max-width: 599px) {
   .inside_3 .sub-container-two {
-    height: 13%;
     margin-bottom: 1em;
   }
 }
@@ -264,7 +258,7 @@ li:hover {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  height: 6em;
+  height: 40%;
 }
 @media (max-width: 1200px) {
   .inside_3 .sub-container-three {
@@ -274,7 +268,7 @@ li:hover {
 @media (max-width: 599px) {
   .inside_3 .sub-container-three {
     flex-direction: column;
-    height: 35%;
+    height: 30%;
   }
 }
 .inside_3 .sub-container-three .trigger_1 {
@@ -421,7 +415,7 @@ li:hover {
   .inside_4 {
     padding-right: 4em;
     padding-left: 4em;
-    height: 90%;
+    height: 100%;
   }
 }
 .inside_4 .top-container-2 {
@@ -430,7 +424,7 @@ li:hover {
 }
 @media (max-width: 599px) {
   .inside_4 .top-container-2 {
-    height: 18%;
+    height: 25%;
   }
 }
 .inside_4 .top-container-2 .main-title-2 {
@@ -467,7 +461,7 @@ li:hover {
 }
 @media (max-width: 599px) {
   .inside_4 .sub-container-one-2 {
-    height: 16%;
+    height: 25%;
   }
 }
 .inside_4 .sub-container-one-2 #p-abilities-2 {
@@ -491,7 +485,7 @@ li:hover {
 }
 @media (max-width: 599px) {
   .inside_4 .sub-container-two-2 {
-    height: 16%;
+    height: 20%;
     margin-bottom: 1rem;
   }
 }
@@ -547,7 +541,7 @@ li:hover {
 @media (max-width: 599px) {
   .inside_4 .sub-container-three-2 {
     flex-direction: column;
-    height: 35%;
+    height: 30%;
   }
 }
 .inside_4 .sub-container-three-2 .trigger_2 {
