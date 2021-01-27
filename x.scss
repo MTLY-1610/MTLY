@@ -71,7 +71,7 @@ body,
   flex-direction: column;
   scroll-snap-align: center;
   @include for-phone-only {
-    height: 90vh;
+    height: 90%;
   }
 }
 ::-webkit-scrollbar {
