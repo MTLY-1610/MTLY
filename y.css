@@ -712,7 +712,7 @@ li:hover {
 @media (max-width: 599px) {
   .inside_2 {
     padding: 3em;
-    height: 90%;
+    height: 100%;
   }
 }
 .inside_2 #about {
@@ -806,8 +806,7 @@ body {
 html,
 body,
 .main-container,
-.container,
-.main-nav .ul_second li {
+.container {
   scroll-behavior: smooth;
 }
 
