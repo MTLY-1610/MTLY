@@ -9,7 +9,9 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
-
+html {
+  height: 100vh;
+}
 :root {
   --res: calc(0.1 * 1vmin);
 }
