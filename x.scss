@@ -54,23 +54,24 @@ body,
   overflow-x: scroll;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
+}
+.container {
+  width: 500vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
   @include for-phone-only {
     height: 90vh;
   }
 }
-.container {
-  width: 500vw;
-  display: flex;
-  flex-direction: row;
-}
 .container .one {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   scroll-snap-align: center;
   @include for-phone-only {
-    height: 90vh;
+    height: 100%;
   }
 }
 ::-webkit-scrollbar {
