@@ -838,9 +838,9 @@ body,
 }
 
 @media (max-width: 599px) {
-  .inside {
-    padding: 1em;
-    height: 100%;
+  .inside_1 .inside_2 .inside_3 .inside_4 .inside_5 {
+    padding: 6em;
+    height: 80%;
   }
 }
 
