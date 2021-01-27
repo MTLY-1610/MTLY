@@ -826,7 +826,7 @@ body,
 }
 @media (max-width: 599px) {
   .container {
-    height: 90vh;
+    height: 90%;
   }
 }
 
