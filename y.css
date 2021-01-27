@@ -776,12 +776,6 @@ li:hover {
   width: 5em;
   height: auto;
 }
-@media (max-width: 599px) {
-  .inside_5 .contact-container .contact-icons :hover {
-    width: 1em;
-  }
-}
-
 *,
 ::before,
 ::after {
