@@ -64,11 +64,11 @@
   }
 
   .sub-container-two-2 {
-    height: 3em;
+    height: 20%;
     margin-bottom: 2rem;
     @include for-phone-only {
       height: 100px;
-      margin-bottom: 1rem;
+      margin-bottom: 1em;
     }
     p {
       line-height: 1.3em;
