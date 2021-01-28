@@ -1,12 +1,12 @@
 .vert {
   display: flex;
-  border-left: 1px solid black;
+  border-left: 4px solid black;
   height: 0.8em;
 }
 .p-abilities {
   display: flex;
   flex-direction: row;
-  width: 60%;
+  width: 70%;
   align-items: center;
   justify-content: space-between;
 }

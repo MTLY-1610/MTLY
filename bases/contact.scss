@@ -22,37 +22,19 @@
       flex-direction: column;
       height: 80%;
     }
-    #cel {
-      width: 6em !important;
-      @include for-phone-only {
-        width: 3.2rem !important;
-      }
-    }
-    .contact-icons {
+    .contact-i {
       display: flex;
-      width: 8em;
-      height: auto;
 
-      @include for-phone-only {
-        width: 4em;
-      }
-    }
-    .contact-icons :hover {
-      display: flex;
-      color: khaki;
-
-      @include for-phone-only {
+      img {
+        display: flex;
+        height: 9em;
+        width: auto;
+        opacity: 1;
+        @include for-phone-only {
+          height: 12em;
+          width: auto;
+        }
       }
     }
   }
 }
-// .icon_kontakt > a {
-//   color:white;
-
-//   font-size: 10vw;
-// }
-// .icon_kontakt > a :hover {
-//   color:lightblue;
-
-// }
-// <a href='https://www.linkedin.com/in/mathieularrouy/'><i id='' class='fab fa-linkedin-in'></i></a>

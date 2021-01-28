@@ -10,7 +10,7 @@
     height: 100%;
   }
   .top-container-2 {
-    height: 20%;
+    height: 6em;
     margin-bottom: 2em;
     @include for-phone-only {
       height: 100px;
@@ -39,19 +39,34 @@
   }
 
   .sub-container-one-2 {
-    height: 25%;
-    margin-bottom: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 2em;
+    margin-bottom: 1em;
+    -webkit-text-stroke-width: 1.7px;
+    -webkit-text-stroke-color: black;
     @include for-big-desktop-up {
       margin-bottom: 1em;
     }
     @include for-phone-only {
       height: 100px;
     }
+    #hover_icon {
+      display: flex;
+      align-self: flex-end;
+      height: 0.7em;
+      @include for-phone-only {
+        height: 4vw;
+      }
+    }
   }
 
   .sub-container-two-2 {
-    height: 20%;
-    margin-bottom: 2em;
+    height: 3em;
+    margin-bottom: 1em;
+
     @include for-phone-only {
       height: 100px;
       margin-bottom: 1em;
@@ -98,7 +113,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    height: 6em;
+    height: 7em;
     @include for-desktop-up {
       height: 25%;
     }
@@ -114,7 +129,7 @@
       justify-content: flex-start;
       color: black;
       text-transform: uppercase;
-      margin: 0;
+      margin-bottom: 1em;
       -webkit-text-stroke-width: 1.7px;
       -webkit-text-stroke-color: black;
       @include for-desktop-up {
@@ -132,7 +147,7 @@
           font-weight: 900;
         }
         #hover_icon {
-          height: 3vw;
+          height: 0.5em;
           @include for-phone-only {
             height: 4vw;
           }
@@ -146,7 +161,7 @@
       align-items: center;
       justify-content: space-between;
       height: 5em;
-      width: 90vmin;
+      width: 70vw;
       @include for-desktop {
         width: 100%;
       }
@@ -167,8 +182,8 @@
       }
 
       #img6 {
-        width: calc(120 * var(--res));
-        height: calc(120 * var(--res));
+        width: 4.5em;
+        height: 4.5em;
         @include for-phone-only {
           width: calc(180 * var(--res));
           height: calc(180 * var(--res));
@@ -176,8 +191,8 @@
       }
 
       #img7 {
-        width: calc(120 * var(--res));
-        height: calc(120 * var(--res));
+        width: 4.5em;
+        height: 4.5em;
         @include for-phone-only {
           width: calc(180 * var(--res));
           height: calc(180 * var(--res));
@@ -185,8 +200,8 @@
       }
 
       #img8 {
-        width: calc(120 * var(--res));
-        height: calc(120 * var(--res));
+        width: 4.5em;
+        height: 4.5em;
         @include for-phone-only {
           width: calc(180 * var(--res));
           height: calc(180 * var(--res));
@@ -194,8 +209,8 @@
       }
 
       #img9 {
-        width: calc(120 * var(--res));
-        height: calc(120 * var(--res));
+        width: 4.5em;
+        height: 4.5em;
         @include for-phone-only {
           width: calc(180 * var(--res));
           height: calc(180 * var(--res));
@@ -203,8 +218,8 @@
       }
 
       #img10 {
-        width: calc(120 * var(--res));
-        height: calc(120 * var(--res));
+        width: 4.5em;
+        height: 4.5em;
         @include for-phone-only {
           width: calc(180 * var(--res));
           height: calc(180 * var(--res));
