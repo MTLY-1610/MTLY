@@ -15,7 +15,7 @@ for (const link of links) {
     bg.style.backgroundImage = `url(${this.dataset.bg})`;
     document.body.classList.add(showClass);
   });
-  link.addEventListener("click", () => {
+  link.addEventListener("touchend", () => {
     document.body.classList.remove(showClass);
   });
   link.addEventListener("mouseleave", () => {
