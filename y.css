@@ -197,16 +197,15 @@ li:hover {
     height: 100px;
   }
 }
-.inside_3 .sub-container-one #p-abilities {
+.inside_3 .sub-container-one .p-abilities {
   display: flex;
-  font-size: 1.5em;
   font-weight: 900;
   text-transform: uppercase;
   text-align: start;
   line-height: 1em;
 }
 @media (max-width: 599px) {
-  .inside_3 .sub-container-one #p-abilities {
+  .inside_3 .sub-container-one .p-abilities {
     font-size: 20px;
     line-height: 20px;
     font-weight: 900;
@@ -230,13 +229,13 @@ li:hover {
     line-height: 15px;
   }
 }
-.inside_3 .sub-container-two a {
+.inside_3 .sub-container-two #p-client a {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 1.5em;
 }
 @media (max-width: 599px) {
-  .inside_3 .sub-container-two a {
+  .inside_3 .sub-container-two #p-client a {
     font-size: 20px;
     font-weight: 900;
   }
@@ -318,11 +317,13 @@ li:hover {
 }
 .inside_3 .sub-container-three .tech-logo-1 {
   display: flex;
+  position: inherit;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   height: 5em;
   width: 80%;
+  z-index: 3;
 }
 @media (max-width: 900px) and (min-width: 600px) {
   .inside_3 .sub-container-three .tech-logo-1 {
@@ -452,7 +453,7 @@ li:hover {
   }
 }
 .inside_4 .sub-container-one-2 {
-  height: 4.5em;
+  height: 25%;
   margin-bottom: 2em;
 }
 @media (min-width: 1200px) {
@@ -465,16 +466,15 @@ li:hover {
     height: 100px;
   }
 }
-.inside_4 .sub-container-one-2 #p-abilities-2 {
+.inside_4 .sub-container-one-2 .p-abilities-2 {
   display: flex;
-  font-size: 1.5em;
   font-weight: 900;
   text-transform: uppercase;
   text-align: start;
   line-height: 1em;
 }
 @media (max-width: 599px) {
-  .inside_4 .sub-container-one-2 #p-abilities-2 {
+  .inside_4 .sub-container-one-2 .p-abilities-2 {
     font-size: 20px;
     line-height: 20px;
     font-weight: 900;
@@ -546,6 +546,7 @@ li:hover {
   }
 }
 .inside_4 .sub-container-three-2 .trigger_2 {
+  position: relative;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -782,6 +783,68 @@ li:hover {
   width: 5em;
   height: auto;
 }
+.vert {
+  display: flex;
+  border-left: 1px solid black;
+  height: 0.8em;
+}
+
+.p-abilities {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.p-abilities a {
+  display: flex;
+  position: relative;
+  transition: all 0.2s;
+  font-size: 1.5em;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: start;
+  line-height: 1em;
+}
+@media (max-width: 599px) {
+  .p-abilities a {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 900;
+  }
+}
+.p-abilities a .p-abilities a::before {
+  z-index: -1;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: all 0.3s ease-out;
+}
+
+.bg-show .bg {
+  z-index: 1;
+  opacity: 1;
+}
+
+.bg-show a:hover {
+  z-index: 2;
+  border-bottom-color: transparent;
+}
+
+.bg-show .p-abilities a:hover::before {
+  transition: transform 0.2s 0.1s ease-out;
+}
+
 *,
 ::before,
 ::after {

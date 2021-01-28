@@ -39,7 +39,7 @@
   }
 
   .sub-container-one-2 {
-    height: 4.5em;
+    height: 25%;
     margin-bottom: 2em;
     @include for-big-desktop-up {
       margin-bottom: 1em;
@@ -48,9 +48,8 @@
       height: 100px;
     }
 
-    #p-abilities-2 {
+    .p-abilities-2 {
       display: flex;
-      font-size: 1.5em;
       font-weight: 900;
       text-transform: uppercase;
       text-align: start;
@@ -122,6 +121,7 @@
     }
 
     .trigger_2 {
+      position: relative;
       display: flex;
       align-items: flex-start;
       justify-content: flex-start;

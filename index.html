@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width" />
     <meta name="description" content="" />
     <title>MTLY</title>
     <link rel="stylesheet" href="y.css" />
@@ -17,16 +17,17 @@
           <div class="line3"></div>
         </div>
         <ul class="ul_second">
-          <li><a href="#1">TeST</a></li>
+          <li><a href="#home">HOME</a></li>
           <li><a href="#2">ABOUT ME</a></li>
           <li><a href="#3">ART-DIRECTION</a></li>
           <li><a href="#4">FRONT-END </a></li>
-          <li><a id="tel" href="#5">CONTACT</a></li>
+          <li><a href="#5">CONTACT</a></li>
         </ul>
       </nav>
       <div id="container" class="container">
-        <section id="1" class="one">
+        <section id="home" class="one">
           <div class="inside_1">
+            <div class="bg"></div>
             <h1 class="zero">Hello work!</h1>
           </div>
         </section>
@@ -41,15 +42,21 @@
               <h1 class="main-title">Art-direction</h1>
             </div>
             <div class="sub-container-one">
-              <p id="p-abilities">
-                branding - e-marketing - print - typography typos - banner -
-                poster - brochures - product - UI-design
-              </p>
+              <div class="p-abilities">
+                <a class="hover" data-bg="ressources/ui.png">branding</a>
+                <div class="vert"></div>
+                <a class="hover" data-bg="ressources/ui.png">print</a>
+                <div class="vert"></div>
+                <a class="hover" data-bg="ressources/ui.png">digital</a>
+                <div class="vert"></div>
+                <a class="hover" data-bg="ressources/ui.png">ui</a>
+              </div>
             </div>
 
             <div class="sub-container-two">
               <p id="p-client">
                 <a
+                  data-bg="ressources/ui.png"
                   class="sub-section"
                   id="l-1"
                   href="https://www.snowbeach.com/"
@@ -73,14 +80,7 @@
             </div>
             <div class="sub-container-three">
               <div class="trigger_1">
-                <h1>
-                  Technologies
-                  <img
-                    id="hover_icon"
-                    src="ressources/hand-point-left-regular.svg"
-                    alt="hover please"
-                  />
-                </h1>
+                <h1>Technologies</h1>
               </div>
               <div class="tech-logo-1">
                 <img src="ressources/id_logo_r.png" id="img1" class="img_1" />
@@ -103,10 +103,17 @@
               <h1 class="main-title-2">Front-end dev</h1>
             </div>
             <div class="sub-container-one-2">
-              <p id="p-abilities-2">
-                ux-design - Front-end developement - design system - ui design -
-                express server - web apps - node.js
-              </p>
+              <div class="p-abilities">
+                <!-- ux-design - Front-end developement - design system - ui design -
+                express server - web apps - node.js -->
+                <a class="hover" data-bg="ressources/ui.png">branding</a>
+                <div class="vert"></div>
+                <a class="hover" data-bg="ressources/ui.png">print</a>
+                <div class="vert"></div>
+                <a class="hover" data-bg="ressources/ui.png">digital</a>
+                <div class="vert"></div>
+                <a class="hover" data-bg="ressources/ai_logo_r.png">ui</a>
+              </div>
             </div>
             <div class="sub-container-two-2">
               <p>
@@ -186,9 +193,10 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="scripts/portfolio.js"></script>
+    <script src="scripts/projects.js"></script>
     <script src="scripts/trigger1.js"></script>
     <script src="scripts/trigger2.js"></script>
-    <script src="scripts/mousseover.js"></script>
     <script src="scripts/burger.js"></script>
     <script src="scripts/text.js"></script>
   </body>

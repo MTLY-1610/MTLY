@@ -49,9 +49,8 @@
       height: 100px;
     }
 
-    #p-abilities {
+    .p-abilities {
       display: flex;
-      font-size: 1.5em;
       font-weight: 900;
       text-transform: uppercase;
       text-align: start;
@@ -79,7 +78,7 @@
       }
     }
 
-    a {
+    #p-client a {
       text-transform: uppercase;
       font-weight: 900;
       font-size: 1.5em;
@@ -158,11 +157,13 @@
 
     .tech-logo-1 {
       display: flex;
+      position: inherit;
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
       height: 5em;
       width: 80%;
+      z-index: 3;
       @include for-desktop {
         width: 100%;
       }

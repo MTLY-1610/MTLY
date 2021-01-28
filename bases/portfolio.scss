@@ -1,0 +1,55 @@
+.vert {
+  display: flex;
+  border-left: 1px solid black;
+  height: 0.8em;
+}
+.p-abilities {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  align-items: center;
+  justify-content: space-between;
+}
+.p-abilities a {
+  display: flex;
+  position: relative;
+  transition: all 0.2s;
+  font-size: 1.5em;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: start;
+  line-height: 1em;
+  @include for-phone-only {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 900;
+  }
+  .p-abilities a::before {
+    z-index: -1;
+  }
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: all 0.3s ease-out;
+}
+.bg-show .bg {
+  z-index: 1;
+  opacity: 1;
+}
+.bg-show a:hover {
+  z-index: 2;
+  border-bottom-color: transparent;
+}
+
+.bg-show .p-abilities a:hover::before {
+  transition: transform 0.2s 0.1s ease-out;
+}
