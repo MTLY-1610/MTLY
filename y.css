@@ -277,6 +277,7 @@ li:hover {
   }
 }
 .inside_3 .sub-container-three .trigger_1 {
+  position: relative;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -317,13 +318,12 @@ li:hover {
 }
 .inside_3 .sub-container-three .tech-logo-1 {
   display: flex;
-  position: inherit;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   height: 5em;
   width: 80%;
-  z-index: 3;
+  z-index: 1;
 }
 @media (max-width: 900px) and (min-width: 600px) {
   .inside_3 .sub-container-three .tech-logo-1 {
@@ -464,20 +464,6 @@ li:hover {
 @media (max-width: 599px) {
   .inside_4 .sub-container-one-2 {
     height: 100px;
-  }
-}
-.inside_4 .sub-container-one-2 .p-abilities-2 {
-  display: flex;
-  font-weight: 900;
-  text-transform: uppercase;
-  text-align: start;
-  line-height: 1em;
-}
-@media (max-width: 599px) {
-  .inside_4 .sub-container-one-2 .p-abilities-2 {
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: 900;
   }
 }
 .inside_4 .sub-container-two-2 {
@@ -832,7 +818,7 @@ li:hover {
 }
 
 .bg-show .bg {
-  z-index: 1;
+  z-index: 2;
   opacity: 1;
 }
 

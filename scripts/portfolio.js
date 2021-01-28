@@ -10,10 +10,7 @@ for (const link of links) {
     bg.style.backgroundImage = `url(${this.dataset.bg})`;
     document.body.classList.add(showClass);
   });
-  // link.addEventListener("click", function () {
-  //   bg.style.backgroundImage = `url(${this.dataset.bg})`;
-  //   document.body.classList.add(showClass);
-  // });
+
   link.addEventListener("touchstart", function () {
     bg.style.backgroundImage = `url(${this.dataset.bg})`;
     document.body.classList.add(showClass);
