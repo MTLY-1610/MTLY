@@ -18,15 +18,17 @@ a {
   width: 100vw;
 }
 
-// .left_logo {
-//   position: fixed;
-//   display: flex;
-//   height: 5em;
-//   width: 5em;
-//   left: 8em;
-//   background-image: url("mtly_ph.svg");
-//   bottom: 2em;
-// }
+.left_logo {
+  position: fixed;
+  display: flex;
+  height: 2em;
+  width: 2em;
+  left: 2em;
+  background-image: url("ressources/smiley.png");
+  background-position: center;
+  background-size: contain;
+  bottom: 1em;
+}
 
 .main-nav .ul_second {
   position: fixed;
@@ -68,7 +70,6 @@ li:hover {
     width: 100vw;
   }
   .left_logo {
-    display: none;
   }
   .main-nav .ul_second {
     height: 100%;

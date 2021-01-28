@@ -19,6 +19,18 @@ a {
   width: 100vw;
 }
 
+.left_logo {
+  position: fixed;
+  display: flex;
+  height: 2em;
+  width: 2em;
+  left: 2em;
+  background-image: url("ressources/smiley.png");
+  background-position: center;
+  background-size: contain;
+  bottom: 1em;
+}
+
 .main-nav .ul_second {
   position: fixed;
   display: flex;
@@ -59,10 +71,6 @@ li:hover {
     bottom: 0;
     z-index: 100;
     width: 100vw;
-  }
-
-  .left_logo {
-    display: none;
   }
 
   .main-nav .ul_second {
