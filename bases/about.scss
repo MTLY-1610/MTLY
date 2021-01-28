@@ -21,7 +21,8 @@
     width: 100%;
 
     @include for-phone-only {
-      font-size: 2em;
+      font-size: 3em;
+      width: 78%;
     }
   }
 }

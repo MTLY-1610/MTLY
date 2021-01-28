@@ -1,7 +1,11 @@
 .vert {
   display: flex;
-  border-left: 4px solid black;
-  height: 0.8em;
+  border-left: 5px solid black;
+  height: 1em;
+  @include for-phone-only {
+    border-left: 2.5px solid black;
+    height: 1.8em;
+  }
 }
 .p-abilities {
   display: flex;
@@ -9,6 +13,9 @@
   width: 70%;
   align-items: center;
   justify-content: space-between;
+  @include for-phone-only {
+    width: 100%;
+  }
 }
 .p-abilities a {
   display: flex;
@@ -20,9 +27,8 @@
   text-align: start;
   line-height: 1em;
   @include for-phone-only {
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: 900;
+    font-size: 3em;
+    -webkit-text-stroke-width: 0;
   }
   .p-abilities a::before {
     z-index: -1;
