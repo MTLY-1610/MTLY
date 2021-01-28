@@ -17,6 +17,7 @@
     justify-content: space-around;
     width: 100%;
     height: 100%;
+    z-index: 100;
     @include for-phone-only {
       flex-direction: column;
       height: 80%;
@@ -38,11 +39,20 @@
     }
     .contact-icons :hover {
       display: flex;
-      width: 5em;
-      height: auto;
+      color: khaki;
 
       @include for-phone-only {
       }
     }
   }
 }
+// .icon_kontakt > a {
+//   color:white;
+
+//   font-size: 10vw;
+// }
+// .icon_kontakt > a :hover {
+//   color:lightblue;
+
+// }
+// <a href='https://www.linkedin.com/in/mathieularrouy/'><i id='' class='fab fa-linkedin-in'></i></a>
