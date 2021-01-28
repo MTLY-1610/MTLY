@@ -13,9 +13,13 @@
 
   #about {
     text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: justify;
     display: flex;
-    font-size: 2em;
+    font-size: 1.5em;
     width: 100%;
+
     @include for-phone-only {
       font-size: 4em;
     }
