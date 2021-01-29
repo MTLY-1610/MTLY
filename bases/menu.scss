@@ -27,7 +27,7 @@ a {
   background-image: url("ressources/smiley.png");
   background-position: center;
   background-size: contain;
-  bottom: 1em;
+  bottom: 40px;
 }
 
 .main-nav .ul_second {
@@ -59,6 +59,9 @@ li:hover {
 @include for-tablet-landscape-up {
   body {
     overflow-x: hidden;
+  }
+  .left_logo {
+    display: none;
   }
   .main-nav {
     position: fixed;

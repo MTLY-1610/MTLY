@@ -28,7 +28,7 @@ a {
   background-image: url("ressources/smiley.png");
   background-position: center;
   background-size: contain;
-  bottom: 1em;
+  bottom: 40px;
 }
 
 .main-nav .ul_second {
@@ -61,6 +61,10 @@ li:hover {
 @media (max-width: 900px) {
   body {
     overflow-x: hidden;
+  }
+
+  .left_logo {
+    display: none;
   }
 
   .main-nav {
