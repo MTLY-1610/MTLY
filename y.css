@@ -22,8 +22,8 @@ a {
 .left_logo {
   position: fixed;
   display: flex;
-  height: 1.8em;
-  width: 1.8em;
+  height: 1em;
+  width: 1em;
   left: 4em;
   background-image: url("ressources/smiley.png");
   background-position: center;
@@ -357,6 +357,9 @@ li:hover {
     width: 12em;
     height: 12em;
   }
+}
+.inside_3 .sub-container-three .tech-logo-1 img :hover {
+  opacity: 0.5;
 }
 .inside_3 .sub-container-three .tech-logo-1 #img2 {
   width: 3.85em;
@@ -791,6 +794,9 @@ li:hover {
     width: auto;
   }
 }
+.inside_5 .contact-container .contact-i img img :hover {
+  opacity: 0.5;
+}
 
 .vert {
   display: flex;
@@ -852,6 +858,7 @@ li:hover {
   background-position: center;
   background-size: contain;
   transition: all 0.3s ease-out;
+  z-index: -1;
 }
 
 .bg-show .bg {
@@ -861,8 +868,7 @@ li:hover {
 
 .bg-show a:hover {
   z-index: 6;
-  color: antiquewhite;
-  -webkit-text-stroke-color: antiquewhite;
+  opacity: 0;
 }
 
 .bg-show .p-abilities a:hover::before {
