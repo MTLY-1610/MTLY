@@ -14,16 +14,16 @@ a {
   flex-direction: row;
   height: 10%;
   bottom: 0;
-  z-index: 100;
+  z-index: 5;
   width: 100vw;
 }
 
 .left_logo {
   position: fixed;
   display: flex;
-  height: 2em;
-  width: 2em;
-  left: 2em;
+  height: 1.8em;
+  width: 1.8em;
+  left: 4em;
   background-image: url("ressources/smiley.png");
   background-position: center;
   background-size: contain;
